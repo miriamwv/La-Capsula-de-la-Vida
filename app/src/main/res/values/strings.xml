@@ -8,4 +8,7 @@
     <string name="menu_home">Home</string>
     <string name="menu_achievements">Achievements</string>
     <string name="menu_my_health">My Health</string>
+    <string name="loginBtn">Login</string>
+    <string name="password">password</string>
+    <string name="Login">Login</string>
 </resources>

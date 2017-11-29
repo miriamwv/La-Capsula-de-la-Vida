@@ -19,6 +19,9 @@
         <activity android:name=".HomeScreen" />
         <activity android:name=".AchievementsScreen" />
         <activity android:name=".myHealth"></activity>
+        <activity android:name=".newMedScreen"></activity>
+        <activity android:name=".reminderSettingsScreen"></activity>
+        <activity android:name=".addReminderScreen"></activity>
     </application>
 
 </manifest>
