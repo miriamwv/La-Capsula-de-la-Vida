@@ -19,6 +19,7 @@
         <activity android:name=".HomeScreen" />
         <activity android:name=".AchievementsScreen" />
         <activity android:name=".myHealth"></activity>
+        <activity android:name=""
     </application>
 
 </manifest>

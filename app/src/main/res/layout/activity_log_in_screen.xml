@@ -11,7 +11,8 @@
         android:layout_height="193dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="22dp"
-        tools:layout_editor_absoluteY="142dp">
+        tools:layout_editor_absoluteY="142dp"
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:id="@+id/username"
@@ -44,11 +45,12 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="text|textPersonName"
-            android:hint="password"
-            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:hint="@string/password"
+            android:drawableStart="@drawable/ic_lock_black_24dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            tools:layout_editor_absoluteY="292dp" />
+            tools:layout_editor_absoluteY="292dp"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/loginBtn"
@@ -59,12 +61,14 @@
             android:layout_marginRight="8dp"
             android:layout_marginStart="8dp"
             android:layout_weight="0.34"
-            android:text="Login"
+            android:text="@string/Login"
             android:clickable="true"
+            android:focusable="true"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             tools:layout_editor_absoluteY="353dp" />
 
     </LinearLayout>
+
 
 </android.support.constraint.ConstraintLayout>
