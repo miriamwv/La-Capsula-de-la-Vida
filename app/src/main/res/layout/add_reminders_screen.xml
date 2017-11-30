@@ -24,4 +24,23 @@
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="@+id/timePicker"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="33dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="@+id/timePicker"
+        app:layout_constraintStart_toStartOf="@+id/timePicker" />
+
+    <TextView
+        android:id="@+id/alarmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="353dp" />
+
 </android.support.constraint.ConstraintLayout>

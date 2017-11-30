@@ -21,7 +21,8 @@
         <activity android:name=".myHealth"></activity>
         <activity android:name=".newMedScreen"></activity>
         <activity android:name=".reminderSettingsScreen"></activity>
-        <activity android:name=".addReminderScreen"></activity>
+        <activity android:name=".AlarmActivity"></activity>
+        <activity android:name=".FinishedReminderScreen"></activity>
     </application>
 
 </manifest>

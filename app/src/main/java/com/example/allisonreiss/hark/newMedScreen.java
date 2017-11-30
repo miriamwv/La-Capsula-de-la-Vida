@@ -16,7 +16,7 @@ import android.widget.ImageView;
 
 public class newMedScreen extends AppCompatActivity {
     private ImageView bar, pill;
-    private Button nextBtn;
+    private Button nextBtn, cancelBtn;
     private TextInputEditText medName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +31,26 @@ public class newMedScreen extends AppCompatActivity {
 
         // create next button
         nextBtn = (Button) findViewById(R.id.nextBtn);
+        cancelBtn = (Button) findViewById(R.id.cancel);
+
+        /**
+         * Go back to home page
+         */
+        cancelBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
+        /**
+         * go to next page, select alarm time
+         */
         nextBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick (View v){
-                startActivity(new Intent(newMedScreen.this, addReminderScreen.class));
+                startActivity(new Intent(newMedScreen.this, AlarmActivity.class));
             }
         });
 
