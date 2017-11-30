@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menu_home"
+        android:id="@+id/action_home"
         android:title="@string/menu_home"
         android:icon="@drawable/ic_home_black_24dp"
         />
 
     <item
-        android:id="@+id/menu_achievements"
-        android:title="@string/menu_achievements"
-        android:icon="@drawable/ic_stars_black_24dp"
+        android:id="@+id/action_reminder"
+        android:title="@string/menu_reminder"
+        android:icon="@drawable/ic_alarm_black_24dp"
         />
 
     <item
-        android:id="@+id/menu_my_health"
-        android:title="@string/menu_my_health"
+        android:id="@+id/action_game"
+        android:title="@string/menu_game"
+        android:icon="@drawable/ic_videogame_asset_black_24dp" />
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/menu_profile"
         android:icon="@drawable/ic_person_black_24dp" />
 </menu>

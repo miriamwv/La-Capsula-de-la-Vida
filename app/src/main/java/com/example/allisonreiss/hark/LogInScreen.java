@@ -24,7 +24,7 @@ public class LogInScreen extends AppCompatActivity {
         {
             @Override
             public void onClick (View v){
-                startActivity(new Intent(LogInScreen.this, newMedScreen.class));
+                startActivity(new Intent(LogInScreen.this, HomeScreen.class));
             }
         });
     }
