@@ -44,7 +44,7 @@
         design:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/cancel"
+        android:id="@+id/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
@@ -71,7 +71,6 @@
         android:ems="10"
         android:hint="Medicine Name"
         android:inputType="textPersonName"
-        android:text="Medicine"
         design:layout_constraintEnd_toEndOf="parent"
         design:layout_constraintStart_toStartOf="parent"
         design:layout_constraintTop_toBottomOf="@+id/pill" />

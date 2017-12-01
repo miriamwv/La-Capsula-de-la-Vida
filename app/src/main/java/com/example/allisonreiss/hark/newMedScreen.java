@@ -1,10 +1,7 @@
 package com.example.allisonreiss.hark;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -33,12 +30,12 @@ public class newMedScreen extends AppCompatActivity {
 
         // create next button
         nextBtn = (Button) findViewById(R.id.nextBtn);
-        cancelBtn = (Button) findViewById(R.id.cancel);
+        cancelBtn = (Button) findViewById(R.id.back);
         cancelBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick (View v){
-                finish();
+                onBackPressed();
             }
         });
 
@@ -46,7 +43,6 @@ public class newMedScreen extends AppCompatActivity {
         {
             @Override
             public void onClick (View v){
-                finish();
                 startActivity(new Intent(newMedScreen.this, AddTimeScreen.class));
             }
         });
