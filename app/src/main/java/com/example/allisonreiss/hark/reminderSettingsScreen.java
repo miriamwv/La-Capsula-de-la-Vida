@@ -1,6 +1,7 @@
 package com.example.allisonreiss.hark;
 
-import android.content.Intent;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -32,9 +33,11 @@ public class reminderSettingsScreen extends AppCompatActivity {
         {
             @Override
             public void onClick (View v) {
-                AddTimeScreen.activity.finish();
+                Fragment frag = AddMedicine.newInstance();
+                replaceFragment(frag);
+                /*AddTimeScreen.activity.finish();
                 newMedScreen.activity.finish();
-                finish();
+                finish();*/
             }
         });
         backBtn = (Button) findViewById(R.id.backBtn);
@@ -46,5 +49,11 @@ public class reminderSettingsScreen extends AppCompatActivity {
             }
         });
         dailyBtn = (RadioButton) findViewById(R.id.dailyBtn);
+    }
+    public void replaceFragment(Fragment someFrag) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_layout, someFrag );
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }
