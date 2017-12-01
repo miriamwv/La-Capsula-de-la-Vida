@@ -71,7 +71,6 @@
         android:ems="10"
         android:hint="Medicine Name"
         android:inputType="textPersonName"
-        android:text="Medicine"
         design:layout_constraintEnd_toEndOf="parent"
         design:layout_constraintStart_toStartOf="parent"
         design:layout_constraintTop_toBottomOf="@+id/pill" />
