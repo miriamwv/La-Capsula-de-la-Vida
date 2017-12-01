@@ -15,15 +15,18 @@ import android.widget.TimePicker;
 /**
  * Contains page to select alarm time
  */
-public class addReminderScreen extends AppCompatActivity {
+public class AddTimeScreen extends AppCompatActivity {
+    public static AppCompatActivity activity;
     private TimePicker timePicker;
-    private Button nextBtn;
+    private Button nextBtn, backBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.add_reminders_screen);
+        activity = this;
+        setContentView(R.layout.activity_add_time);
         nextBtn = (Button)findViewById(R.id.nextTimeBtn);
         timePicker = (TimePicker) findViewById(R.id.timePicker);
+        backBtn = (Button) findViewById(R.id.backBtn);
 
         nextBtn.setOnClickListener(new View.OnClickListener()
         {
@@ -33,8 +36,20 @@ public class addReminderScreen extends AppCompatActivity {
              * When nextBtn is clicked, go to settings page
              */
             public void onClick (View v){
-                startActivity(new Intent(addReminderScreen.this, reminderSettingsScreen.class));
+                startActivity(new Intent(AddTimeScreen.this, reminderSettingsScreen.class));
             }
         });
+        backBtn.setOnClickListener(new View.OnClickListener()
+        {
+
+            @Override
+            /**
+             * When nextBtn is clicked, go to settings page
+             */
+            public void onClick (View v){
+                onBackPressed();
+            }
+        });
+
     }
 }

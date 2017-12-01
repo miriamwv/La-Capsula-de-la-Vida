@@ -19,7 +19,7 @@
         <activity android:name=".HomeScreen" />
         <activity android:name=".newMedScreen" />
         <activity android:name=".reminderSettingsScreen" />
-        <activity android:name=".addReminderScreen" />
+        <activity android:name=".AddTimeScreen" />
         <activity android:name=".CalendarScreen"></activity>
     </application>
 
