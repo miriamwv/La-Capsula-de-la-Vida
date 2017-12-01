@@ -38,7 +38,7 @@ public class newMedScreen extends AppCompatActivity {
         {
             @Override
             public void onClick (View v){
-                finish();
+                onBackPressed();
             }
         });
 
@@ -46,7 +46,6 @@ public class newMedScreen extends AppCompatActivity {
         {
             @Override
             public void onClick (View v){
-                finish();
                 startActivity(new Intent(newMedScreen.this, AddTimeScreen.class));
             }
         });
