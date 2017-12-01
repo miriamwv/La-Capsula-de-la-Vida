@@ -3,15 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
 
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="wrap_content"
         android:layout_height="446dp"
-        android:backgroundTint="@android:color/holo_blue_light"
-        android:headerBackground="@android:color/holo_blue_light"
-        android:numbersSelectorColor="@android:color/holo_blue_light"
+        android:backgroundTint="?attr/colorPrimary"
+        android:headerBackground="?attr/actionModeSplitBackground"
+        android:numbersSelectorColor="?attr/actionModeSplitBackground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,9 +20,19 @@
         android:id="@+id/nextTimeBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="20dp"
         android:text="Next"
-        app:layout_constraintBottom_toBottomOf="@+id/timePicker"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
