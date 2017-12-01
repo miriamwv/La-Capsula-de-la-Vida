@@ -19,7 +19,7 @@
         android:progress="50" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/VLProgressLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -30,18 +30,18 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/CD4ProgressLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView2"
-        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignBaseline="@+id/VLProgressLabel"
+        android:layout_alignBottom="@+id/VLProgressLabel"
         android:layout_alignParentStart="true"
         android:layout_marginStart="51dp"
         android:text="CD4"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/missionLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/missionProgressBar"
@@ -56,8 +56,8 @@
         android:id="@+id/imageView"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_alignBottom="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4"
+        android:layout_alignBottom="@+id/missionLabel"
+        android:layout_toEndOf="@+id/missionLabel"
         android:cropToPadding="false"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_arrow_upward_black_24dp" />
@@ -67,22 +67,22 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_alignStart="@+id/imageView"
-        android:layout_below="@+id/textView4"
+        android:layout_below="@+id/missionLabel"
         android:layout_marginTop="14dp"
         android:src="@drawable/ic_arrow_downward_black_24dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/CD4Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView"
-        android:layout_alignStart="@+id/textView6"
+        android:layout_alignStart="@+id/VLLabel"
         android:text="CD4"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/VLLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView2"
