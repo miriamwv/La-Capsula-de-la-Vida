@@ -10,8 +10,18 @@
 
     <TimePicker
         android:id="@+id/timePicker2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="387dp"
+        android:layout_height="384dp"
+        android:layout_marginTop="40dp"
+        android:amPmBackgroundColor="@android:color/holo_blue_dark"
+        android:amPmTextColor="@android:color/holo_blue_dark"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:headerBackground="@color/white_trans"
+        android:headerTimeTextAppearance="@style/Base.TextAppearance.AppCompat.Display2"
+        android:numbersBackgroundColor="@color/lightGrey"
+        android:numbersInnerTextColor="@color/lightGrey"
+        android:numbersSelectorColor="@color/colorPrimary"
+        android:numbersTextColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
