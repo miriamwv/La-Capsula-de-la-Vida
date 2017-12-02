@@ -10,10 +10,10 @@
     <!-- TODO: Update blank fragment layout -->
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/pill"
         android:layout_width="142dp"
         android:layout_height="140dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="44dp"
         android:src="@mipmap/ic_launcher_foreground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
