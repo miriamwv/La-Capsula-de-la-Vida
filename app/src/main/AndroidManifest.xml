@@ -17,10 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeScreen" />
-        <activity android:name=".newMedScreen" />
         <activity android:name=".reminderSettingsScreen" />
-        <activity android:name=".AddTimeScreen" />
-        <activity android:name=".CalendarScreen"></activity>
+        <activity android:name=".CalendarScreen" />
+        <activity android:name=".ReminderActivity"></activity>
     </application>
 
 </manifest>

@@ -21,16 +21,13 @@
         android:textSize="30sp"
         android:id="@+id/textView" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/addBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="11dp"
-        android:layout_toEndOf="@+id/areiss_image"
-        android:clickable="true"
-        android:src="@android:drawable/ic_input_add"
-        android:tint="@color/white"
-        app:backgroundTint="@color/colorPrimary" />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignTop="@+id/areiss_image"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="105dp" />
 
 </RelativeLayout>

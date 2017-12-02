@@ -3,6 +3,7 @@ package com.example.allisonreiss.hark;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -36,18 +37,13 @@ public class PickTimeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_pick_time, container, false);
         nextBtn = view.findViewById(R.id.nextBtn);
-        timePicker = (TimePicker) view.findViewById(R.id.timePicker);
+        timePicker = (TimePicker) view.findViewById(R.id.timePicker2);
         back = (Button) view.findViewById(R.id.backBtn);
         nextBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick (View v) {
-                Fragment frag = CompletedReminderFragment.newInstance();
-
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.frame_layout, frag);
-                transaction.commit();
-                //    startActivity(new Intent(getActivity(), newMedScreen.class));
+                ((ReminderActivity)getActivity()).selectFragment(2);
             }
         });
 
@@ -55,15 +51,10 @@ public class PickTimeFragment extends Fragment {
         {
             @Override
             public void onClick (View v) {
-                Fragment frag = AddMedicine.newInstance();
-
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-                transaction.replace(R.id.frame_layout, frag);
-                transaction.commit();
-                //    startActivity(new Intent(getActivity(), newMedScreen.class));
+                ((ReminderActivity)getActivity()).selectFragment(0);
             }
         });
-        
+
         return view;
     }
 
