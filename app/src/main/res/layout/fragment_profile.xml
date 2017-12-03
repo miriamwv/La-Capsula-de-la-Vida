@@ -18,17 +18,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
         android:layout_marginTop="22dp"
         android:text="User's Name"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
-
-    <ListView
-        android:id="@+id/pillTimes"
-        android:layout_width="wrap_content"
-        android:layout_height="129dp" />
 
     <ProgressBar
         android:id="@+id/pointsProgressBar"
