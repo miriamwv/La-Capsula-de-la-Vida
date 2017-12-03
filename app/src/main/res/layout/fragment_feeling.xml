@@ -1,0 +1,113 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.allisonreiss.hark.Feeling"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="531dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/feelingInstructions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="140dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="22dp"
+            android:text="How are you feeling today?"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/happy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/happy"
+            android:layout_width="159dp"
+            android:layout_height="147dp"
+            android:layout_below="@+id/feelingInstructions"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="16dp"
+            android:clickable="true"
+            android:src="@drawable/happy"
+            app:backgroundTint="@color/white"
+            app:elevation="3dp"
+            app:layout_constraintBottom_toTopOf="@+id/very_uneasy"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feelingInstructions" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/sad"
+            android:layout_width="159dp"
+            android:layout_height="147dp"
+            android:layout_marginBottom="141dp"
+            android:clickable="true"
+            android:src="@drawable/sad"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/terrible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/feelingInstructions" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/cry"
+            android:layout_width="159dp"
+            android:layout_height="147dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="192dp"
+            android:clickable="true"
+            android:src="@drawable/cry"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/terrible"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/very_uneasy"
+            android:layout_width="159dp"
+            android:layout_height="147dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginStart="53dp"
+            android:clickable="true"
+            android:src="@drawable/very_uneasy"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/terrible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/happy" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/terrible"
+            android:layout_width="159dp"
+            android:layout_height="147dp"
+            android:layout_marginBottom="33dp"
+            android:layout_marginEnd="75dp"
+            android:clickable="true"
+            android:src="@drawable/terrible"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/very_uneasy"
+            app:layout_constraintTop_toBottomOf="@+id/cry" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

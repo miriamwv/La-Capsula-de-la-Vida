@@ -11,7 +11,8 @@
     <TimePicker
         android:id="@+id/timePicker2"
         android:layout_width="387dp"
-        android:layout_height="384dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="67dp"
         android:layout_marginTop="60dp"
         android:amPmBackgroundColor="@color/colorPrimary"
         android:amPmTextColor="@android:color/holo_blue_dark"
@@ -22,8 +23,9 @@
         android:numbersInnerTextColor="@color/colorAccent"
         android:numbersSelectorColor="@color/colorAccent"
         android:numbersTextColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textTimeInstructions" />
 
     <Button
         android:id="@+id/backBtn"
@@ -32,22 +34,33 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
         android:layout_marginStart="20dp"
-        android:background="@color/progressBarRed"
-        android:backgroundTint="@color/progressBarRed"
         android:text="@string/Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/nextBtn"
-        style="@style/Widget.AppCompat.Button.Borderless"
+        style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
         android:layout_marginEnd="20dp"
-        android:background="@color/teal"
         android:text="next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textTimeInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Reminder TIme"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/timePicker2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
