@@ -22,7 +22,7 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(R.layout.activity_home_screen);
 
 
-        FloatingActionButton add = (FloatingActionButton) findViewById(R.id.floatingAdd);
+        final FloatingActionButton add = (FloatingActionButton) findViewById(R.id.floatingAdd);
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,6 +30,7 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        add.hide();
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView)
                 findViewById(R.id.navigation);
@@ -41,16 +42,24 @@ public class HomeScreen extends AppCompatActivity {
                         Fragment selectedFragment = null;
                         switch (item.getItemId()) {
                             case R.id.action_home:
+                                add.hide();
                                 selectedFragment = HomeFragment.newInstance();
+
                                 break;
                             case R.id.action_reminder:
+                                add.show();
                                 selectedFragment = ReminderFragment.newInstance();
+
                                 break;
                             case R.id.action_game:
+                                add.hide();
                                 selectedFragment = GameFragment.newInstance();
+
                                 break;
                             case R.id.action_profile:
+                                add.hide();
                                 selectedFragment = ProfileFragment.newInstance();
+
                                 break;
                         }
                         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
