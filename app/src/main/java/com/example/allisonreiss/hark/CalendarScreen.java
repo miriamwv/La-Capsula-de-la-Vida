@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class CalendarScreen extends AppCompatActivity {
 
     CalendarView calendar;
     Button backBtn;
+    TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +28,8 @@ public class CalendarScreen extends AppCompatActivity {
                 onBackPressed();
             }
         });
+        calendar = (CalendarView) findViewById(R.id.calendar);
+        title = (TextView) findViewById(R.id.calendarLabel);
 /*
         calendar = (CalendarView) findViewById(R.id.calendar);
         calendar.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {

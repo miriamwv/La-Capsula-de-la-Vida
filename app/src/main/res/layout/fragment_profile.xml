@@ -1,100 +1,169 @@
-<ScrollView android:layout_width="match_parent"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    tools:context="com.example.allisonreiss.hark.ProfileFragment">
-
-    <!--   android:src="@mipmap/truiton"/> -->
-
-    <TextView
-        android:id="@+id/nameLabel"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:text="User's Name"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        tools:context="com.example.allisonreiss.hark.ProfileFragment">
 
-    <ListView
-        android:id="@+id/pillTimes"
-        android:layout_width="wrap_content"
-        android:layout_height="129dp" />
+        <!--   android:src="@mipmap/truiton"/> -->
 
-    <ProgressBar
-        android:id="@+id/pointsProgressBar"
-        style="@style/PointsProgressBar"
-        android:layout_width="250dp"
-        android:layout_height="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/white"
-        android:backgroundTint="@color/colorPrimary"
-        android:max="100"
-        android:progress="60"
-        android:progressTint="@color/colorPrimaryDark"
-        android:textAlignment="center" />
+        <TextView
+            android:id="@+id/nameLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:text="User's Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/pointsLabel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="You need 40 more points to level up!"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/feelingsLogButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Log how you're feeling today!"
-        android:textAllCaps="false"
-        android:textSize="24sp" />
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                android:layout_marginBottom="13dp"
+                android:layout_marginEnd="61dp"
+                android:layout_marginStart="61dp"
+                android:background="@drawable/ic_person_black_24dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toTopOf="@+id/pointsLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
 
-    <Button
-        android:id="@+id/calendarButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Calendar"
-        android:textAllCaps="false"
-        android:textSize="24sp" />
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="447dp">
 
-    <Button
-        android:id="@+id/journalButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Journal"
-        android:textAllCaps="false"
-        android:textSize="24sp" />
+            <ProgressBar
+                android:id="@+id/pointsProgressBar"
+                style="@style/PointsProgressBar"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="67dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:backgroundTint="@color/colorPrimary"
+                android:max="100"
+                android:progress="60"
+                android:progressTint="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toTopOf="@+id/pointsLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/motivationalPhraseLabel"
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="21dp"
-        android:background="@color/lightGrey"
-        android:gravity="center"
-        android:text="There will the a motivational phrase at the bottom of this screen!"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
+            <TextView
+                android:id="@+id/pointsLabel"
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="175dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="69dp"
+                android:text="You need 40 more points to level up!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/motivationalPhraseLabel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-</LinearLayout>
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="178dp"
+                android:layout_marginBottom="168dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <Button
+                    android:id="@+id/feelingsLogButton"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginStart="34dp"
+                    android:text="Log how you're feeling today!"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/calendarButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/pointsLabel" />
+
+                <Button
+                    android:id="@+id/calendarButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="34dp"
+                    android:layout_marginStart="34dp"
+                    android:text="Calendar"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/journalButton"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/feelingsLogButton" />
+
+                <Button
+                    android:id="@+id/journalButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:layout_marginEnd="31dp"
+                    android:layout_marginStart="31dp"
+                    android:text="Journal"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toTopOf="@+id/motivationalPhraseLabel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/calendarButton" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/motivationalPhraseLabel"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="17dp"
+                android:layout_marginEnd="29dp"
+                android:layout_marginStart="29dp"
+                android:background="@color/lightGrey"
+                android:gravity="center"
+                android:text="There will the a motivational phrase at the bottom of this screen!"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pointsLabel" />
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
 </ScrollView>
