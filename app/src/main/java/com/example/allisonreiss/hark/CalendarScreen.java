@@ -9,12 +9,19 @@ import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+/**
+ * Creates Calendar Screen
+ */
 public class CalendarScreen extends AppCompatActivity {
 
     CalendarView calendar;
     Button backBtn;
     TextView title;
 
+    /**
+     * Initialize Calendar Screen
+     * @param savedInstanceState Bundle to create
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

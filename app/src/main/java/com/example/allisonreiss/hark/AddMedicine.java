@@ -15,6 +15,9 @@ import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 
+/**
+ * Implement AddMedicine page, user can add Medicinal information
+ */
 public class AddMedicine extends Fragment {
     private OnFragmentInteractionListener mListener;
     private FloatingActionButton addBtn;
@@ -24,20 +27,38 @@ public class AddMedicine extends Fragment {
     private NumberPicker numPicker;
     private TextView dosage;
 
+    /**
+     * Empty AddMedicine Constructor
+     */
     public AddMedicine() {
         // Required empty public constructor
     }
 
+    /**
+     * AddMedicine Constructor
+     * @return AddMedicine Fragment
+     */
     public static AddMedicine newInstance() {
         AddMedicine fragment = new AddMedicine();
         return fragment;
     }
 
+    /**
+     * Create saved instance
+     * @param savedInstanceState
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * Create Add New Medicine Page
+     * @param inflater Inflater to inflate layout
+     * @param container Container location
+     * @param savedInstanceState false
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -78,19 +99,20 @@ public class AddMedicine extends Fragment {
         });
         return view;
     }
+
+    /**
+     * Go back to last page just visited (Reminder's Page)
+     */
     public void onBackPressed()
     {
         FragmentManager fm = getActivity().getSupportFragmentManager();
         fm.popBackStack();
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
 
+    /**
+     * Detach fragment
+     */
     @Override
     public void onDetach() {
         super.onDetach();
@@ -102,10 +124,6 @@ public class AddMedicine extends Fragment {
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name

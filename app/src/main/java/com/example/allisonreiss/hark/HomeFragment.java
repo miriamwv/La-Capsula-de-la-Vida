@@ -12,16 +12,31 @@ public class HomeFragment extends Fragment {
     // We will use this variable later to update the CD4/Viral Load Progress!
     private ProgressBar missionBar;
 
+    /**
+     * Create new instance of HomeFragment
+     * @return
+     */
     public static HomeFragment newInstance() {
         HomeFragment fragment = new HomeFragment();
         return fragment;
     }
 
+    /**
+     * Create Bundle
+     * @param savedInstanceState Bundle
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * Initialize elements on HomeFragment
+     * @param inflater LayoutInflater to inflate Fragment
+     * @param container Location of ViewGroup
+     * @param savedInstanceState Bundle
+     * @return View of fragment
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

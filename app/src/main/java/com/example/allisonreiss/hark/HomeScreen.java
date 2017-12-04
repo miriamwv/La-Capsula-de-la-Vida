@@ -14,8 +14,16 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.MenuItem;
 import android.view.View;
 
+/**
+ * Create HomeScreen, includes mission goals and CD4/Viral Load levels
+ */
 public class HomeScreen extends AppCompatActivity {
     ViewPager pager;
+
+    /**
+     * Create Bundle
+     * @param savedInstanceState Bundle
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -7,8 +7,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+/**
+ * Activity to create new Reminder Form
+ */
 public class ReminderActivity extends AppCompatActivity {
    private ViewPager pager;
+
+    /**
+     * Create passed in Bundle, initialize MyPageAdapter
+     * @param savedInstanceState Bundle to create
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +28,11 @@ public class ReminderActivity extends AppCompatActivity {
         pager.setAdapter(pageAdapter);
 
     }
+
+    /**
+     * Given a position, select fragment
+     * @param position index of fragment
+     */
     public void selectFragment(int position) {
         pager.setCurrentItem(position, true);
     }
