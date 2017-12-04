@@ -1,22 +1,22 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.allisonreiss.hark.GameFragment">
+    tools:context="com.example.allisonreiss.hark.GameFragment"
+    android:id="@+id/relativeLayout">
 
-    <ImageView
-        android:id="@+id/areiss_image"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true" />
     <!--   android:src="@mipmap/truiton"/> -->
 
     <TextView
+        android:id="@+id/achievements"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/areiss_image"
         android:layout_centerHorizontal="true"
-        android:text="Game Fragment"
-        android:textSize="30sp"/>
+        android:text="Achievements"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="69dp" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

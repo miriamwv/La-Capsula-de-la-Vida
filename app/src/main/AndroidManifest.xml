@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".HomeScreen" />
         <activity android:name=".CalendarScreen" />
-        <activity android:name=".ReminderActivity"></activity>
+        <activity android:name=".ReminderActivity" />
     </application>
+
 
 </manifest>

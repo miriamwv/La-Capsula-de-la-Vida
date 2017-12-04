@@ -60,6 +60,7 @@ public class PickTimeFragment extends Fragment {
         nextBtn = view.findViewById(R.id.nextBtn);
         timePicker = (TimePicker) view.findViewById(R.id.timePicker2);
         back = (Button) view.findViewById(R.id.backBtn);
+
         nextBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override

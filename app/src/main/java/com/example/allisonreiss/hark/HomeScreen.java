@@ -31,6 +31,7 @@ public class HomeScreen extends AppCompatActivity {
 
 
         final FloatingActionButton add = (FloatingActionButton) findViewById(R.id.floatingAdd);
+        add.hide();
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -38,7 +39,6 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        add.hide();
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView)
                 findViewById(R.id.navigation);
