@@ -8,20 +8,28 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 /**
- * Screen to select daily feelings
+ * Create Screen to select daily feelings
  */
 public class Feeling extends Fragment {
     private OnFragmentInteractionListener mListener;
-    FloatingActionButton happy, sad, cry;
+    FloatingActionButton happy, sad, cry, veryUneasy, terrible, horrible;
+    Button backBtn;
 
+    /**
+     * Empty Feeling constructor
+     */
     public Feeling() {
         // Required empty public constructor
     }
 
-
+    /**
+     * Create new instance of Feeling Fragment
+     * @return Feeling Fragment
+     */
     public static Feeling newInstance() {
         Feeling fragment = new Feeling();
         Bundle args = new Bundle();
@@ -29,11 +37,22 @@ public class Feeling extends Fragment {
         return fragment;
     }
 
+    /**
+     * Create Bundle
+     * @param savedInstanceState Bundle to create
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * Initialize elements onto Feeling Fragment
+     * @param inflater LayoutInflater to inflate fragment
+     * @param container ViewGroup Location of container
+     * @param savedInstanceState Bundle
+     * @return
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -42,10 +61,25 @@ public class Feeling extends Fragment {
         happy = view.findViewById(R.id.happy);
         sad = view.findViewById(R.id.sad);
         cry = view.findViewById(R.id.cry);
+        veryUneasy = view.findViewById(R.id.very_uneasy);
+        terrible = view.findViewById(R.id.terrible);
+        horrible = view.findViewById(R.id.horrible);
+
+        backBtn = view.findViewById(R.id.backBtn);
+        backBtn.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick (View v){
+                getFragmentManager().popBackStack();
+            }
+        });
         return view;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
+    /**
+     * Retrieve data on button press
+     * @param uri Listener
+     */
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
@@ -63,6 +97,9 @@ public class Feeling extends Fragment {
         }
     }*/
 
+    /**
+     * Detach fragment
+     */
     @Override
     public void onDetach() {
         super.onDetach();
@@ -74,10 +111,6 @@ public class Feeling extends Fragment {
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.
-     * <p>
-     * See the Android Training lesson <a href=
-     * "http://developer.android.com/training/basics/fragments/communicating.html"
-     * >Communicating with Other Fragments</a> for more information.
      */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name

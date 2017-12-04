@@ -34,4 +34,11 @@ public class ReminderFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_reminder, container, false);
         return view;
     }
+    /**
+     * Fragment frag = AddMedicine.newInstance();
+     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+     transaction.replace(R.id.frame_layout, someFrag );
+     transaction.addToBackStack(null);
+     transaction.commit();
+     */
 }

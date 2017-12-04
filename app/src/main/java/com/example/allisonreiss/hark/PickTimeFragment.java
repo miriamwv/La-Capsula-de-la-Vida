@@ -11,26 +11,47 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TimePicker;
 
+/**
+ * Screen to select Alarm time
+ */
 public class PickTimeFragment extends Fragment {
     private Button nextBtn, back;
     private TimePicker timePicker;
 
     private OnFragmentInteractionListener mListener;
 
+    /**
+     * Empty public constructor
+     */
     public PickTimeFragment() {
         // Required empty public constructor
     }
 
+    /**
+     * Create new instance of PickTimeFragment
+     * @return PickTimeFragment
+     */
     public static PickTimeFragment newInstance() {
         PickTimeFragment fragment = new PickTimeFragment();
         return fragment;
     }
 
+    /**
+     * Create passed in Bundle
+     * @param savedInstanceState Bundle to create
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
+    /**
+     * Initialize elements on PickTimeFragment
+     * @param inflater LayoutInflater to inflate Fragment
+     * @param container Location of ViewGroup
+     * @param savedInstanceState Bundle
+     * @return View of fragment
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -39,6 +60,7 @@ public class PickTimeFragment extends Fragment {
         nextBtn = view.findViewById(R.id.nextBtn);
         timePicker = (TimePicker) view.findViewById(R.id.timePicker2);
         back = (Button) view.findViewById(R.id.backBtn);
+
         nextBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -58,7 +80,10 @@ public class PickTimeFragment extends Fragment {
         return view;
     }
 
-    // TODO: Rename method, update argument and hook method into UI event
+    /**
+     * Retrieve data on button press
+     * @param uri Uri
+     */
     public void onButtonPressed(Uri uri) {
         if (mListener != null) {
             mListener.onFragmentInteraction(uri);
@@ -66,12 +91,18 @@ public class PickTimeFragment extends Fragment {
     }
 
 
+    /**
+     * Detach fragment
+     */
     @Override
     public void onDetach() {
         super.onDetach();
         mListener = null;
     }
 
+    /**
+     * Listen to interaction
+     */
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);

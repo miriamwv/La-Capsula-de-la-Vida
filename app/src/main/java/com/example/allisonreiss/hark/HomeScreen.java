@@ -14,8 +14,16 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.MenuItem;
 import android.view.View;
 
+/**
+ * Create HomeScreen, includes mission goals and CD4/Viral Load levels
+ */
 public class HomeScreen extends AppCompatActivity {
     ViewPager pager;
+
+    /**
+     * Create Bundle
+     * @param savedInstanceState Bundle
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +31,7 @@ public class HomeScreen extends AppCompatActivity {
 
 
         final FloatingActionButton add = (FloatingActionButton) findViewById(R.id.floatingAdd);
+        add.hide();
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,7 +39,6 @@ public class HomeScreen extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        add.hide();
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView)
                 findViewById(R.id.navigation);

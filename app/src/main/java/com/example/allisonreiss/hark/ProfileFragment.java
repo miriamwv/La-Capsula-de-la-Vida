@@ -40,9 +40,6 @@ public class ProfileFragment extends Fragment {
             public void onClick(View view) {
                 Fragment frag = Feeling.newInstance();
                 replaceFragment(frag);
-                /*AddTimeScreen.activity.finish();
-                newMedScreen.activity.finish();
-                finish();*/
             }
         });
 
