@@ -16,6 +16,7 @@ public class ProfileFragment extends Fragment {
 
     private Button calendarBtn;
     private Button feelingBtn;
+    private Button journalBtn;
 
     public static ProfileFragment newInstance() {
         ProfileFragment fragment = new ProfileFragment();
@@ -34,6 +35,7 @@ public class ProfileFragment extends Fragment {
 
         calendarBtn = (Button) view.findViewById(R.id.calendarButton);
         feelingBtn = (Button) view.findViewById(R.id.feelingsLogButton);
+        journalBtn = (Button) view.findViewById(R.id.journalButton);
 
         feelingBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +52,15 @@ public class ProfileFragment extends Fragment {
                 replaceFragment(fragment);
             }
         });
+
+        journalBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = JournalFragment.newInstance();
+                replaceFragment(fragment);
+            }
+        });
+
         return view;
     }
     public void replaceFragment(Fragment someFrag) {
