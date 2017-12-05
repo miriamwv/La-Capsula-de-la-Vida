@@ -75,16 +75,18 @@
 
             <TextView
                 android:id="@+id/pointsLabel"
-                android:layout_width="384dp"
-                android:layout_height="wrap_content"
+                android:layout_width="322dp"
+                android:layout_height="28dp"
                 android:layout_marginBottom="175dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="69dp"
                 android:text="You need 40 more points to level up!"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toTopOf="@+id/motivationalPhraseLabel"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

@@ -46,8 +46,8 @@ public class ProfileFragment extends Fragment {
         calendarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), CalendarScreen.class);
-                startActivity(intent);
+                Fragment fragment = CalendarFragment.newInstance();
+                replaceFragment(fragment);
             }
         });
         return view;
