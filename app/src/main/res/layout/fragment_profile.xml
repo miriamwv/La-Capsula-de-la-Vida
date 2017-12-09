@@ -8,24 +8,31 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        tools:context="com.example.allisonreiss.hark.ProfileFragment">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="22dp"
+        android:text="User's Name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-        <!--   android:src="@mipmap/truiton"/> -->
-
-        <TextView
-            android:id="@+id/nameLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp"
-            android:text="User's Name"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+    <ProgressBar
+        android:id="@+id/pointsProgressBar"
+        style="@style/PointsProgressBar"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/lightGrey"
+        android:max="100"
+        android:layout_gravity="center"
+        android:progress="60"
+        android:textAlignment="center" />
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
