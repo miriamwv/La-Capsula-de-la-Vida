@@ -96,13 +96,12 @@
         android:textColor="@color/black"
         android:textSize="18sp" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/character"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/VLLabel"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
-        android:src="@drawable/ic_face_black_24dp" />
-
+        android:layout_marginTop="59dp"
+        android:background="@drawable/character" />
 </RelativeLayout>

@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 /**
  * Create Screen to select daily feelings
@@ -17,7 +18,8 @@ import android.widget.ImageButton;
 public class Feeling extends Fragment {
     private OnFragmentInteractionListener mListener;
     FloatingActionButton happy, sad, cry, veryUneasy, terrible, horrible;
-    Button backBtn;
+    Button backBtn, logBtn;
+    TextView feelingText;
 
     /**
      * Empty Feeling constructor
@@ -64,8 +66,10 @@ public class Feeling extends Fragment {
         veryUneasy = view.findViewById(R.id.very_uneasy);
         terrible = view.findViewById(R.id.terrible);
         horrible = view.findViewById(R.id.horrible);
+        feelingText = view.findViewById(R.id.feelingText);
 
         backBtn = view.findViewById(R.id.backBtn);
+        logBtn = view.findViewById(R.id.LogBtn);
         backBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -73,8 +77,46 @@ public class Feeling extends Fragment {
                 getFragmentManager().popBackStack();
             }
         });
+        happy.setOnClickListener(btnClickListener);
+        sad.setOnClickListener(btnClickListener);
+        cry.setOnClickListener(btnClickListener);
+        veryUneasy.setOnClickListener(btnClickListener);
+        terrible.setOnClickListener(btnClickListener);
+        horrible.setOnClickListener(btnClickListener);
+        logBtn.setOnClickListener(btnClickListener);
+
         return view;
+
     }
+
+private View.OnClickListener btnClickListener = new View.OnClickListener() {
+    public void onClick(View v) {
+        switch(v.getId()) {
+            case R.id.happy:
+                feelingText.setText("I am feeling happy!");
+                break;
+            case R.id.sad:
+                feelingText.setText("I am feeling sad!");
+                break;
+            case R.id.cry:
+                feelingText.setText("I am feeling pain!");
+                break;
+            case R.id.very_uneasy:
+                feelingText.setText("I am feeling very uneasy!");
+                break;
+            case R.id.terrible:
+                feelingText.setText("I am feeling terrible!");
+                break;
+            case R.id.horrible:
+                feelingText.setText("I am feeling a lot of pain!");
+                break;
+            case R.id.LogBtn:
+                getFragmentManager().popBackStack();
+                break;
+        }
+        }
+    };
+
 
     /**
      * Retrieve data on button press

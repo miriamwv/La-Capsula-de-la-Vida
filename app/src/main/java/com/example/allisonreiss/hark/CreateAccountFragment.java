@@ -1,11 +1,13 @@
 package com.example.allisonreiss.hark;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -16,6 +18,7 @@ import android.widget.TextView;
 public class CreateAccountFragment extends Fragment {
     TextView header, firstNameTitle, lastNameTitle, username, password;
     EditText name, lastName, usernameInput, passwordInput;
+    Button createAcc;
 
     /**
      * Create Bundle
@@ -36,7 +39,7 @@ public class CreateAccountFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_create_account, container, false);
-        /*header = view.findViewById(R.id.header);
+        header = view.findViewById(R.id.header);
         firstNameTitle = view.findViewById(R.id.firstNameTitle);
         lastNameTitle = view.findViewById(R.id.lastNameTitle);
         username = view.findViewById(R.id.username);
@@ -45,7 +48,16 @@ public class CreateAccountFragment extends Fragment {
         name = view.findViewById(R.id.name);
         lastName = view.findViewById(R.id.lastName);
         usernameInput = view.findViewById(R.id.usernameInput);
-        passwordInput = view.findViewById(R.id.passwordInput);*/
+        passwordInput = view.findViewById(R.id.passwordInput);
+
+        createAcc = view.findViewById(R.id.createAcc);
+        createAcc.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick (View v){
+                getFragmentManager().popBackStack();
+            }
+        });
         return view;
 
     }
