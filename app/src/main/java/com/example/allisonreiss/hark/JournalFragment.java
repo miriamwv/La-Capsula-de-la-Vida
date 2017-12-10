@@ -63,7 +63,7 @@ public class JournalFragment extends Fragment {
             mListener.onJournalFragmentInteraction(uri);
         }
     }
-
+  
     @Override
     public void onDetach() {
         super.onDetach();

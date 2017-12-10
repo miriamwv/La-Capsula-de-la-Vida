@@ -25,8 +25,10 @@ import java.util.Calendar;
  */
 public class CalendarFragment extends Fragment {
 
+
     private Button backBtn;
 //    ProfileFragment profileFragment = new ProfileFragment();
+
 
     private OnFragmentInteractionListener mListener;
 
@@ -43,13 +45,13 @@ public class CalendarFragment extends Fragment {
     public static CalendarFragment newInstance() {
         CalendarFragment fragment = new CalendarFragment();
         Bundle args = new Bundle();
-
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Override

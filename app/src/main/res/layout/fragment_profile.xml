@@ -8,24 +8,31 @@
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        tools:context="com.example.allisonreiss.hark.ProfileFragment">
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="22dp"
+        android:text="User's Name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
-        <!--   android:src="@mipmap/truiton"/> -->
-
-        <TextView
-            android:id="@+id/nameLabel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="22dp"
-            android:text="User's Name"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+    <ProgressBar
+        android:id="@+id/pointsProgressBar"
+        style="@style/PointsProgressBar"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/lightGrey"
+        android:max="100"
+        android:layout_gravity="center"
+        android:progress="60"
+        android:textAlignment="center" />
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -75,16 +82,18 @@
 
             <TextView
                 android:id="@+id/pointsLabel"
-                android:layout_width="384dp"
-                android:layout_height="wrap_content"
+                android:layout_width="322dp"
+                android:layout_height="28dp"
                 android:layout_marginBottom="175dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="69dp"
                 android:text="You need 40 more points to level up!"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toTopOf="@+id/motivationalPhraseLabel"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

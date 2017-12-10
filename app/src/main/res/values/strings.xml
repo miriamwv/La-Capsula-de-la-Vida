@@ -18,6 +18,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_create_reminder_form">CreateReminderForm</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="title_calendar">Medical Appointments Calendar</string>
+    <string name="title_journal">Medication Journal</string>
 
     <!-- Strings related to Settings -->
 
