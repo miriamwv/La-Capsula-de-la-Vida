@@ -93,22 +93,23 @@ private View.OnClickListener btnClickListener = new View.OnClickListener() {
     public void onClick(View v) {
         switch(v.getId()) {
             case R.id.happy:
-                feelingText.setText("I am feeling happy!");
+                feelingText.setText("Me estoy sintiendo feliz!");
                 break;
             case R.id.sad:
-                feelingText.setText("I am feeling sad!");
+                feelingText.setText("Me siento triste!");
                 break;
             case R.id.cry:
-                feelingText.setText("I am feeling pain!");
+                feelingText.setText("\n" +
+                        "estoy sintiendo dolor");
                 break;
             case R.id.very_uneasy:
-                feelingText.setText("I am feeling very uneasy!");
+                feelingText.setText("¡Me siento muy incómodo!");
                 break;
             case R.id.terrible:
-                feelingText.setText("I am feeling terrible!");
+                feelingText.setText("Me siento terrible!");
                 break;
             case R.id.horrible:
-                feelingText.setText("I am feeling a lot of pain!");
+                feelingText.setText("Estoy sintiendo mucho dolor!");
                 break;
             case R.id.LogBtn:
                 getFragmentManager().popBackStack();
