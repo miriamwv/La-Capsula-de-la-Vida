@@ -49,19 +49,18 @@ public class ProfileFragment extends Fragment {
         calendarBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = CalendarFragment.newInstance();
-                replaceFragment(fragment);
+                Fragment frag = CalendarFragment.newInstance();
+                replaceFragment(frag);
             }
         });
 
         journalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = JournalFragment.newInstance();
-                replaceFragment(fragment);
+                Fragment frag = JournalFragment.newInstance();
+                replaceFragment(frag);
             }
         });
-
         return view;
     }
     public void replaceFragment(Fragment someFrag) {

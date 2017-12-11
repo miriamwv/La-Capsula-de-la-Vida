@@ -23,13 +23,6 @@ public class JournalFragment extends Fragment {
     Button backBtn;
 
     /**
-     * Empty Journal Fragment constructor
-     */
-    public JournalFragment() {
-        // Required empty public constructor
-    }
-
-    /**
      * Use this factory method to create a new instance of
      * this fragment using the provided parameters.
      * @return A new instance of fragment JournalFragment.
@@ -70,18 +63,7 @@ public class JournalFragment extends Fragment {
             mListener.onJournalFragmentInteraction(uri);
         }
     }
-    /*
-        @Override
-        public void onAttach(Context context) {
-            super.onAttach(context);
-            if (context instanceof OnFragmentInteractionListener) {
-                mListener = (OnFragmentInteractionListener) context;
-            } else {
-                throw new RuntimeException(context.toString()
-                        + " must implement OnFragmentInteractionListener");
-            }
-        }
-    */
+  
     @Override
     public void onDetach() {
         super.onDetach();

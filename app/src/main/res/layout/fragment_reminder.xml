@@ -1,27 +1,31 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.allisonreiss.hark.ReminderFragment"
-    android:id="@+id/relativeLayout2">
+    tools:context="com.example.allisonreiss.hark.ReminderFragment">
 
     <!--   android:src="@mipmap/truiton"/> -->
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reminder Fragment"
-        android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="@+id/myPager"
-        tools:layout_editor_absoluteX="439dp" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/myPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="4dp"
+        android:text="Your Reminders"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/myPager" />
 
 </android.support.constraint.ConstraintLayout>
