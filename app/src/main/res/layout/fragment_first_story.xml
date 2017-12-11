@@ -1,20 +1,16 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.allisonreiss.hark.FirstStoryFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
+        android:id="@+id/relative"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:text="First story page placeholder" />
 
         <Button
             android:id="@+id/backButton"
@@ -34,6 +30,15 @@
             android:layout_alignTop="@+id/backButton"
             android:layout_marginEnd="15dp"
             android:text="@string/next" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/backButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/story_one" />
     </RelativeLayout>
 
 </FrameLayout>

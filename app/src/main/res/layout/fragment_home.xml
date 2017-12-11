@@ -101,8 +101,9 @@
         android:id="@+id/character"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
+        android:layout_alignStart="@+id/missionProgressBar"
         android:layout_below="@+id/VLLabel"
-        android:layout_marginTop="59dp"
-        android:background="@drawable/character" />
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/home" />
 </RelativeLayout>
