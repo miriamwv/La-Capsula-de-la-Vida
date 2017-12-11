@@ -25,6 +25,8 @@ allprojects {
 }
 
 dependencies {
+    implementation 'com.google.firebase:firebase-auth:11.0.4'
+    implementation 'com.google.firebase:firebase-database:11.0.4'
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -40,3 +42,5 @@ dependencies {
     compile 'com.android.support:support-v4:26.1.0'
     implementation 'com.android.support:mediarouter-v7:27.0.2'
 }
+
+apply plugin: 'com.google.gms.google-services'

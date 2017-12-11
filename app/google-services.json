@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "929043166663",
+    "firebase_url": "https://hark-f2f08.firebaseio.com",
+    "project_id": "hark-f2f08",
+    "storage_bucket": "hark-f2f08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:929043166663:android:2e32bffc4198c466",
+        "android_client_info": {
+          "package_name": "com.example.allisonreiss.hark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "929043166663-nv0om8c9i0ribof6kpcq11t40gch8l8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.allisonreiss.hark",
+            "certificate_hash": "daa5348a18be52b48fe7418b18d0259b1ee9b412"
+          }
+        },
+        {
+          "client_id": "929043166663-oe0o3m1j4hclbngn5oo02ri8jdb5vp5q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1uVEiOJi4ccvcVrL8uU8Wnt_PuJOU2qo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "929043166663-oe0o3m1j4hclbngn5oo02ri8jdb5vp5q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

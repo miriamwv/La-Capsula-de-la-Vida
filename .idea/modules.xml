@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HARK.iml" filepath="$PROJECT_DIR$/HARK.iml" />
+      <module fileurl="file://C:\Users\Joshua\Documents\GitHub\HARK\HARK.iml" filepath="C:\Users\Joshua\Documents\GitHub\HARK\HARK.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
