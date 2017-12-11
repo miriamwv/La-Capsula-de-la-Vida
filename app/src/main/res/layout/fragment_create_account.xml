@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="70dp"
             android:layout_marginTop="40dp"
-            android:text="Create new account"
+            android:text="Crear nueva cuenta"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="24sp" />
@@ -36,7 +36,7 @@
                 android:layout_width="33dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="First Name"
+                android:text="Nombre"
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Last Name"
+                android:text="Apellido"
                 android:textColor="@color/black" />
         </LinearLayout>
 
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="First Name"
+                android:hint="Nombre"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="Last Name"
+                android:hint="Apellido"
                 android:inputType="textPersonName" />
         </LinearLayout>
 
@@ -79,7 +79,7 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Username"
+            android:text="Nombre de usuario"
             android:textColor="@color/black" />
 
         <EditText
@@ -88,7 +88,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:hint="Username"
+            android:hint="Nombre de usuario"
             android:inputType="textPersonName"
             android:textColor="@android:color/darker_gray" />
 
@@ -96,7 +96,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:text="Contraseña"
             android:textColor="@color/black" />
 
         <EditText
@@ -105,14 +105,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="Contraseña"
             android:inputType="textPassword" />
 
         <TextView
             android:id="@+id/dateOfBirth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Date of birth"
+            android:text="Fecha de Nacimiento"
             android:textColor="@color/black" />
 
         <EditText
@@ -121,7 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:hint="MM/DD/YYYY"
+            android:hint="MM/DD/AAAA"
             android:inputType="date" />
 
         <Button

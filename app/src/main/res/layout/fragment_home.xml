@@ -28,7 +28,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="24dp"
         android:layout_marginTop="15dp"
-        android:text="Viral Loads"
+        android:text="Carga Viral"
         android:textSize="18sp" />
 
     <TextView
@@ -50,7 +50,7 @@
         android:layout_below="@+id/missionProgressBar"
         android:layout_marginStart="39dp"
         android:layout_marginTop="67dp"
-        android:text="Mission: "
+        android:text="Misión:"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold" />
@@ -93,7 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView2"
         android:layout_alignEnd="@+id/missionProgressBar"
-        android:text="Viral Loads"
+        android:text="Carga Viral"
         android:textColor="@color/black"
         android:textSize="18sp" />
 

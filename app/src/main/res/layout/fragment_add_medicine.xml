@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/lightGrey"
         android:ems="10"
-        android:hint="Medicine Name"
+        android:hint="@string/med_name"
         android:inputType="textPersonName"
         android:textColorLink="@color/colorPrimary"
         android:textCursorDrawable="@color/colorPrimary"
@@ -42,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="18dp"
         android:layout_marginEnd="18dp"
-        android:text="next"
+        android:text="@string/next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="18dp"
         android:layout_marginStart="16dp"
-        android:text="@android:string/cancel"
+        android:text="@string/cancel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -72,7 +72,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
         android:layout_marginEnd="72dp"
-        android:text="Dosage"
+        android:text="@string/dosage"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="@+id/numPicker"
@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Create a new reminder"
+        android:text="@string/new_reminder"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -94,7 +94,7 @@
         android:id="@+id/instructionsMed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Type in Medicine Name:"
+        android:text="@string/type_med_name"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/medicineName"
