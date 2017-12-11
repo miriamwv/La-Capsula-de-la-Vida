@@ -65,7 +65,7 @@ public class CreateAccountFragment extends Fragment {
 
     public void replaceFragment(Fragment someFrag) {
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, someFrag );
+        transaction.replace(R.id.frameLayout5, someFrag );
         transaction.addToBackStack(null);
         transaction.commit();
     }

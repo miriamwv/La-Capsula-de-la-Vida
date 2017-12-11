@@ -61,8 +61,8 @@ public class SecondStoryFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_second_story, container, false);
-        nextBtn = view.findViewById(R.id.nextBtn);
-        backBtn = (Button) view.findViewById(R.id.backBtn);
+        nextBtn = view.findViewById(R.id.nextButton);
+        backBtn = (Button) view.findViewById(R.id.backButton);
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,21 +87,7 @@ public class SecondStoryFragment extends Fragment {
      * Retrieve data on button press
      * @param uri Uri
      */
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
-    }
 
-
-    /**
-     * Detach fragment
-     */
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
 
     /**
      * Listen to interaction
@@ -113,7 +99,7 @@ public class SecondStoryFragment extends Fragment {
 
     public void replaceFragment(Fragment someFrag) {
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, someFrag );
+        transaction.replace(R.id.frame_layout7, someFrag );
         transaction.addToBackStack(null);
         transaction.commit();
     }
