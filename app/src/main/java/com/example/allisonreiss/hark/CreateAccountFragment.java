@@ -4,6 +4,7 @@ package com.example.allisonreiss.hark;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,15 +52,21 @@ public class CreateAccountFragment extends Fragment {
         passwordInput = view.findViewById(R.id.passwordInput);
 
         createAcc = view.findViewById(R.id.createAcc);
-        createAcc.setOnClickListener(new View.OnClickListener()
-        {
+        createAcc.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View v){
-                getFragmentManager().popBackStack();
+            public void onClick(View view) {
+                Fragment frag = FirstStoryFragment.newInstance();
+                replaceFragment(frag);
             }
         });
         return view;
 
     }
 
+    public void replaceFragment(Fragment someFrag) {
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_layout, someFrag );
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
 }
