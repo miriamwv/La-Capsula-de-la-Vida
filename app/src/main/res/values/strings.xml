@@ -6,7 +6,7 @@
     <string name="text_notifications">Notifications Fragment</string>
     <string name="text_search">Search Fragment</string>
 
-    <string name="menu_home">Casa</string>
+    <string name="menu_home">Inicio</string>
     <string name="menu_reminder">Recordatorio</string>
     <string name="menu_game">Logros</string>
     <string name="menu_profile">Perfil</string>
