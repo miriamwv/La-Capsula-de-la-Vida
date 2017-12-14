@@ -61,13 +61,13 @@ public class ThirdStoryFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_third_story, container, false);
-        nextBtn = view.findViewById(R.id.nextBtn);
-        backBtn = (Button) view.findViewById(R.id.backBtn);
+        nextBtn = view.findViewById(R.id.nextButton);
+        backBtn = (Button) view.findViewById(R.id.backButton);
 
         nextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment frag = HomeFragment.newInstance();
+                Fragment frag = fourthStory.newInstance();
                 replaceFragment(frag);
             }
         });
@@ -81,16 +81,6 @@ public class ThirdStoryFragment extends Fragment {
         });
 
         return view;
-    }
-
-    /**
-     * Retrieve data on button press
-     * @param uri Uri
-     */
-    public void onButtonPressed(Uri uri) {
-        if (mListener != null) {
-            mListener.onFragmentInteraction(uri);
-        }
     }
 
 
@@ -113,7 +103,7 @@ public class ThirdStoryFragment extends Fragment {
 
     public void replaceFragment(Fragment someFrag) {
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, someFrag );
+        transaction.replace(R.id.frameLayout10, someFrag );
         transaction.addToBackStack(null);
         transaction.commit();
     }
