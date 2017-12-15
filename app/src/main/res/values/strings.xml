@@ -10,9 +10,9 @@
     <string name="menu_reminder">Recordatorio</string>
     <string name="menu_game">Logros</string>
     <string name="menu_profile">Perfil</string>
-    <string name="loginBtn">Acceso</string>
-    <string name="password">Contrseña</string>
-    <string name="Login">Acceso</string>
+    <string name="loginBtn">Acceder</string>
+    <string name="password">Contraseña</string>
+    <string name="Login">Acceder</string>
     <string name="Back">&lt; Atrás</string>
 
     <string name="users_name">Nombre de usuario</string>

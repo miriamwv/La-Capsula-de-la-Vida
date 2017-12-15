@@ -12,6 +12,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import java.util.Calendar;
+import java.util.Locale;
+
+import android.app.Activity;
+import android.content.res.Configuration;
+
 
 
 
@@ -24,7 +29,6 @@ import java.util.Calendar;
  * create an instance of this fragment.
  */
 public class CalendarFragment extends Fragment {
-
 
     private Button backBtn;
 //    ProfileFragment profileFragment = new ProfileFragment();
@@ -51,6 +55,13 @@ public class CalendarFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Locale locale = new Locale("es");
+        Locale.setDefault(locale);
+        Configuration config = new Configuration();
+        config.locale = locale;
+
+        getResources().updateConfiguration(config, null);
 
     }
 

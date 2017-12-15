@@ -11,8 +11,10 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="695dp"
-        android:orientation="vertical">
+        android:layout_height="607dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/header"
@@ -112,7 +114,7 @@
             android:id="@+id/dateOfBirth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fecha de Nacimiento"
+            android:text="Fecha de nacimiento"
             android:textColor="@color/black" />
 
         <EditText
@@ -121,7 +123,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:ems="10"
-            android:hint="MM/DD/AAAA"
+            android:hint="DD/MM/AAAA"
             android:inputType="date" />
 
         <Button

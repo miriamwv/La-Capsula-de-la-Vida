@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"
-        android:text="Logro Conseguido"
+        android:text="Logros Conseguidos"
         android:textSize="30sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintHorizontal_bias="0.412"
@@ -48,7 +48,7 @@
 
                     <ImageView
                         android:id="@+id/star1"
-                        android:layout_width="55dp"
+                        android:layout_width="202dp"
                         android:layout_height="125dp"
                         android:src="@drawable/whitestar_blackback" />
 
