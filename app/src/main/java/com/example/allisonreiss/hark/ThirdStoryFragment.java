@@ -14,22 +14,13 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link ThirdStoryFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
  * Use the {@link ThirdStoryFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class ThirdStoryFragment extends Fragment {
     private Button nextBtn, backBtn;
 
-    private ThirdStoryFragment.OnThirdFragmentInteractionListener mListener;
 
-    /**
-     * Empty public constructor
-     */
-    public ThirdStoryFragment() {
-        // Required empty public constructor
-    }
 
     /**
      * Create new instance of FirstStoryFragment
@@ -84,26 +75,9 @@ public class ThirdStoryFragment extends Fragment {
     }
 
 
-    /**
-     * Detach fragment
-     */
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
-
-    /**
-     * Listen to interaction
-     */
-    public interface OnThirdFragmentInteractionListener {
-        // TODO: Update argument type and name
-        void onFragmentInteraction(Uri uri);
-    }
-
     public void replaceFragment(Fragment someFrag) {
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.frameLayout10, someFrag );
+        transaction.replace(R.id.frame_layout8, someFrag );
         transaction.addToBackStack(null);
         transaction.commit();
     }

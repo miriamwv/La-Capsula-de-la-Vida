@@ -18,6 +18,8 @@ import android.widget.Button;
 public class fourthStory extends Fragment {
     private Button nextBtn, backBtn;
 
+
+
     /**
      * Create new instance of FirstStoryFragment
      * @return PickTimeFragment
@@ -70,9 +72,10 @@ public class fourthStory extends Fragment {
         return view;
     }
 
+
     public void replaceFragment(Fragment someFrag) {
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
-        transaction.replace(R.id.frame_layout, someFrag );
+        transaction.replace(R.id.frameLayout10, someFrag );
         transaction.addToBackStack(null);
         transaction.commit();
     }
